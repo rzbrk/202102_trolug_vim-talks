@@ -1,0 +1,60 @@
+       _
+__   _(_)_ __ ___
+\ \ / / | '_ ` _ \
+ \ V /| | | | | | |
+  \_/ |_|_| |_| |_|
+
+TroLUG, 04.02.2021
+--------------------------------------------------------------------------------
+
+Teil 1: Einführung
+==================
+
+Was ist vim [1]?
+----------------
+
+Vim ist ...
+
+  ... ein Kommandozeilenzeilen-Texteditor
+  ... extrem konfigurier- und erweiterbar
+  ... eine Verbesserung des vi-Editors, den man von vielen POSIX-Systemen kennt
+  ... auf vielen minimalen Linux-/Unix-Systemen ist vi vorhanden. Vi und vim
+      teilen die meisten Befehle
+  ... vor fast 30 Jahren von Bram Moolenaar [2] entwickelt worden
+  ... Charityware. Die Lizenz ist kompatibel zu GPL, aber User werden gebeten,
+      für Kinder in Uganda via NGO ICCF [3] zu spenden.
+
+
+Warum vim?
+----------
+
+* Läßt sich auf Minimal-Systemen ohne grafisches System und mit minimalen
+  Ressourcen betreiben
+
+    Vim-Minimal 8.2.525     1.35 MByte
+    GNU Nano 4.9.1          2.52 MByte
+
+* Wird auch als "Editor der Programmierer bezeichnet" [4]
+* Kann die Effektivität beim Schreiben von Text und Quellcode erhöhen
+* Kann über Plugins und die Konfigurationsdabei ~/.vimrc angepasst und
+  erweitert werden
+* Vim kann komplette IDEs ersetzen
+* Vim ist sehr populär, es gibt viele gute Tutorials, HowTos, ...
+
+
+Herausforderungen
+-----------------
+
+* Bedienung und Kozepte von vim unterscheiden sich teilweise erheblich von
+  anderen Editoren
+* Nicht unbedingt intuitiv
+* Steile Lernkurve
+
+
+Zum Weiterlesen
+---------------
+
+[1] http://vim.org
+[2] https://www.moolenaar.net/
+[3] https://iccf.org.ng/
+[4] https://www.vim.org/about.php

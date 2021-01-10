@@ -1,0 +1,43 @@
+       _
+__   _(_)_ __ ___
+\ \ / / | '_ ` _ \
+ \ V /| | | | | | |
+  \_/ |_|_| |_| |_|
+
+TroLUG, 04.02.2021
+--------------------------------------------------------------------------------
+
+Teil X: Shell in vim
+====================
+
+Shell aus vim heraus starten
+----------------------------
+
+Aus vim heraus kann man ganz einfach in die Linux Shell wechseln, ohne vim
+tatsächlich zu beenden. Dazu führt man im Normal-Mode einfach den Befehl
+
+    :sh
+
+oder
+
+    :shell
+
+aus.
+
+
+Shell-Befehl aus vim heraus ausführen
+-------------------------------------
+
+Mit dem Befehl :![command] kann man aus vim heraus einen Befehl ausführen,
+bspw.:
+
+    :!ls -al
+
+
+Ausgabe eines Shell-Befehls in vim übernehmen
+---------------------------------------------
+
+Die Ausgabe eines Shell-Befehls kann wie folgt in vim übernommen werden:
+
+    :r!date
+

@@ -1,0 +1,101 @@
+       _
+__   _(_)_ __ ___
+\ \ / / | '_ ` _ \
+ \ V /| | | | | | |
+  \_/ |_|_| |_| |_|
+
+TroLUG, 04.02.2021
+--------------------------------------------------------------------------------
+
+Teil X: Suche und Ersetze
+=========================
+
+Die Suche-Ersetze-Funktion in vim
+---------------------------------
+
+Suche und Ersetze erfolgt mit folgendem vim-Befehl im Normal-Mode:
+
+    :[Bereich]s/[alt]/[neu]/[Flags]
+
+    Bereich:
+    [leer]  aktuelle Zeile
+    %       das gesamte Dokument
+    10,20   von Zeile 10 bis 20
+    '<,'>   im markierten Bereich (Visual Mode)
+
+    Flags:
+    g       alt-String in Zeile auch mehrmals ersetzen
+    c       Bestätigung durch Nutzer vor Ersetzen
+    i       Ignoriere Groß-/Kleinschreibung
+    I       Unterscheide Groß-/Kleinschreibung
+
+Beispiel 1:
+-----------
+Im ganzen Dokument das Wort Beispiel ersetzen.
+(Und danach rückgängig machen!)
+
+Beispiel 2:
+-----------
+In dieser Zeile wollen wir DAS ersetzen.
+
+Beispiel 3:
+-----------
+In dieser Zeile haben wir DAS, DAS und DAS zu ersetzen.
+
+Beispiel 4:
+-----------
+In dieser Zeile wollen wir das und DAS ersetzen.
+
+Beispiel 5:
+-----------
+    :s/^/^#/
+    :s/^#//
+Mit den vim-Standardbefehlen kann man Zeilen einfach auskommentieren und es
+auch wieder rückgängig machen. Das Zeichen "^" mein "Anfang der Zeile",
+analog steht "$" für das Ende einer Zeile.
+
+	def we_dont_need_this(**kargs)
+	    stuff()
+	    more_stuff()
+
+
+Manche Zeichen müssen beim Suchen-Ersetzen "escaped" werden, damit sie
+korrekt verarbeitet werden. Das "Escapen" erfolgt durch Voranstellen
+eines "\".
+
+Beispiel 6:
+-----------
+    :s/{/\[/
+    :s_{_\[_
+
+In dieser Zeile wollen wir { durch [ ersetzen.
+
+
+Komplexere Suche-Ersetze-Operationen
+------------------------------------
+
+Man kann auch komplexe Suche-Ersetze-Operationen mit regulären Ausdrücken
+durchführen.
+Die Syntax für reguläre Ausdrücke ist etwas anders als bspw. bei sed. Eine
+gute Seite zum Nachschlagen ist bspw. http://www.vimregex.com/.
+
+Beispiel 6:
+-----------
+    :85,87s/\[Platzhalter\d\+\]/TEXT/g
+
+In dieser Zeilen wollen wir [Platzhalter01] durch TEXT ersetzen.
+Und auch in dieser Zeile soll [Platzhalter02] ausgetauscht werden.
+Aber in dieser Zeile mit Platzhalter soll alles so bleiben, wie es ist.
+
+Beispiel 7:
+-----------
+    :s/Subject:\s/\(.*\)/\<subject\>\1\<\/subject\>/
+
+    Subject: Betreff der Email
+
+
+Zum Weiterlesen
+---------------
+
+[1] http://www.vimregex.com/
+
