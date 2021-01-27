@@ -81,7 +81,7 @@ gute Seite zum Nachschlagen ist bspw. http://www.vimregex.com/.
 
 Beispiel 6:
 -----------
-    :85,87s/\[Platzhalter\d\+\]/TEXT/g
+    :86,88s/\[Platzhalter\d\+\]/TEXT/g
 
 In dieser Zeilen wollen wir [Platzhalter01] durch TEXT ersetzen.
 Und auch in dieser Zeile soll [Platzhalter02] ausgetauscht werden.
