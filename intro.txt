@@ -51,6 +51,15 @@ Herausforderungen
 * Steile Lernkurve
 
 
+Installation
+------------
+
+    $ sudo apt install vim      # Debian, Ubuntu, Mint
+    $ dnf install vim           # RHEL, CentOS, Fedora
+    $ sudo pacman -S vim        # Arch Linux, Manjaro
+    $ sudo zypper install vim   # OpenSuse
+
+
 Zum Weiterlesen
 ---------------
 
