@@ -13,7 +13,7 @@ Teil X: vim und neovim konfigurieren
 Über die Konfigurationsdatei lassen sich vim und neovim umfangreich anpassen.
 
     vim:    ~/.vimrc
-    nvim:   ~/.config/nvim.init
+    nvim:   ~/.config/nvim/init.vim
 
 Eine bestehende vim-Config kann in den meisten Fällen beinahe unverändert auch
 in neovim verwendet werden!
@@ -26,7 +26,7 @@ Im einfachsten Fall erfolgt also die Migration von vim nach neovim durch
 folgende Befehle:
 
     mkdir -p ~/.config/nvim
-    cp ~/.vimrc ~/.config/nvim/nvim.init
+    cp ~/.vimrc ~/.config/nvim/init.vim
 
 Problematisch sind vim-Plugins, die u.U. nicht in neovim laufen.
 
