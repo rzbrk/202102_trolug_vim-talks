@@ -48,7 +48,7 @@ In dieser Zeile wollen wir das und DAS ersetzen.
 
 Beispiel 5:
 -----------
-    :s/^/^#/
+    :s/^/#/
     :s/^#//
 Mit den vim-Standardbefehlen kann man Zeilen einfach auskommentieren und es
 auch wieder rückgängig machen. Das Zeichen "^" mein "Anfang der Zeile",
